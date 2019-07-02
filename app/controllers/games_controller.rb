@@ -23,7 +23,6 @@ class GamesController < ApplicationController
 
   def game_params
     params.permit(state:[])
-    render json: game
   end
 
   def find_game
