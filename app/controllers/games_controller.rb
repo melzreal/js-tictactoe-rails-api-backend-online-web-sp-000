@@ -21,6 +21,7 @@ class GamesController < ApplicationController
 
   def game_params
     params.require(:game).permit(state:[] )
+    render json: game
   end
 
 
