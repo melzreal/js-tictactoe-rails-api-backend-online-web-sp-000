@@ -22,7 +22,7 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.permit(state:[])
+    params.require(:game).permit(state:[])
   end
 
   def find_game
