@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
   # Add your GamesController code here
   def index
-    games = Game.all 
+    games = Game.all
     render json: games
   end
 
@@ -11,7 +11,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    game = Game.new 
+    game = Game.new
   end
 
   def update
